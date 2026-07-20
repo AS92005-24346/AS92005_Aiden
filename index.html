@@ -1,12 +1,52 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Environmental Advisory</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Times New Roman', serif;
+            text-align: center;
+        }
 
-<body style="background: url('lg.avif') center/cover no-repeat fixed">
-<a href="TheEarth.html">The Earth</a>
-<a href="TheTrees.html">The Trees</a>
-<div style="background: rgba(220,235,220,0.9); padding: 100px; border-radius: 100px; text-align: center;">
-    <h1>Environmental Advisory</h1>
-    <h2>Finding ways to make our planet better</h2>
-    <h3>by 24346</h3>
- </div>
-  </body>
+        video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .capsule-box {
+            background: rgba(255, 255, 255, 0.2);
+            margin: 30px auto;
+            width: 90%;
+            max-width: 1100px;
+            padding: 50px 20px;
+            border-radius: 45px;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            margin-bottom: 15px;
+        }
+
+        .subtitle {
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="capsule-box">
+        <h1>Environmental Advisory</h1>
+        <p class="subtitle">Finding ways to make our planet better</p>
+        <p>by 24346</p>
+    </div>
+
+</body>
 </html>
