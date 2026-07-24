@@ -1,1 +1,173 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Environmental Advisory - The Trees</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 10px 0;
+            font-family: Arial, sans-serif;
+            background-color: #2e5a1c;
+            background-image: linear-gradient(to bottom, #72ab5b, #2d5a1b);
+            background-attachment: fixed;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-sizing: border-box;
+        }
+
+        nav {
+            width: 98%;
+            max-width: 1450px;
+            display: flex;
+            justify-content: flex-end;
+            background-color: rgba(220, 235, 220, 0.65);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 15px;
+            margin-top: 5px;
+            margin-bottom: 12px;
+            padding: 12px 35px;
+            box-sizing: border-box;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #1b3310;
+            font-size: 13px;
+            margin-left: 24px;
+        }
+
+        .main-container {
+            width: 98%;
+            max-width: 1450px;
+            background-color: rgba(240, 243, 240, 0.85);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border-radius: 45px;
+            padding: 50px 35px 35px 35px;
+            box-sizing: border-box;
+            display: grid;
+            grid-template-columns: 240px 1fr 245px;
+            gap: 30px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .left-column {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .image-placeholder-left {
+            width: 100%;
+            height: 350px;
+            background: linear-gradient(135deg, #12330a 0%, #3e632b 50%, #7da663 100%);
+            border-radius: 35px;
+        }
+
+        .center-column {
+            display: flex;
+            flex-direction: column;
+            padding-right: 5px;
+        }
+
+        .section {
+            margin-bottom: 35px;
+        }
+
+        .section h2 {
+            font-size: 26px;
+            color: #000;
+            margin: 0 0 16px 0;
+            font-weight: bold;
+            letter-spacing: -0.5px;
+        }
+
+        .section p {
+            font-size: 13.5px;
+            color: #222;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .right-column {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .sidebar-text {
+            font-size: 11px;
+            color: #444;
+            line-height: 1.4;
+            padding-left: 5px;
+        }
+
+        .image-placeholder-right {
+            width: 100%;
+            height: 285px;
+            background: linear-gradient(210deg, #2b5936 0%, #4f803c 60%, #87a858 100%);
+            border-radius: 40px;
+            border: 5px solid #a3f28d;
+            box-sizing: border-box;
+        }
+
+        @media (max-width: 1024px) {
+            .main-container {
+                grid-template-columns: 1fr;
+            }
+            nav {
+                justify-content: center;
+                padding: 12px 20px;
+            }
+            nav a {
+                margin: 0 15px;
+            }
+            .image-placeholder-left, .image-placeholder-right {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="TheTrees.html">The Trees</a>
+        <a href="seas.html">Seas</a>
+    </nav>
+
+    <div class="main-container">
+        <div class="left-column">
+            <div class="image-placeholder-left"></div>
+        </div>
+
+        <div class="center-column">
+            <div class="section">
+                <h2>1. Plant Native Species</h2>
+                <p>Planting trees native to your area supports local wildlife and maintains regional biodiversity. Native trees adapt perfectly to local soil types and climate patterns, requiring much less water and zero artificial fertilizers to thrive. By establishing native canopies, you create essential nesting grounds for local birds and critical food networks for native insect populations, ensuring the local ecosystem remains healthy, balanced, and sustainable for generations to come.</p>
+            </div>
+
+            <div class="section">
+                <h2>2. Reduce Paper Waste</h2>
+                <p>Protect existing forests by cutting down on paper consumption every day. Choose digital documents over printed pages whenever possible, opt for paperless billing, and utilize reusable cloth towels instead of disposable napkins. When purchasing paper products, look for items labeled with post-consumer recycled content to minimize direct commercial logging demands.</p>
+            </div>
+
+            <div class="section">
+                <h2>3. Support Global Reforestation</h2>
+                <p>Get involved with community tree planting events and support organizations dedicated to global forest restoration. Large forest ecosystems act as massive carbon sinks that regulate global temperatures, clean the air we breathe, and prevent soil erosion. Protecting these green spaces directly preserves habitats for millions of diverse plant and animal species worldwide.</p>
+            </div>
+        </div>
+
+        <div class="right-column">
+            <div class="sidebar-text">
+                Forests cover roughly 31% of the global land area, providing vital resources and sustaining life across the planet.
+            </div>
+            <div class="image-placeholder-right"></div>
+        </div>
+    </div>
+
+</body>
+</html>
+

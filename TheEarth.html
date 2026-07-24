@@ -1,42 +1,172 @@
-<html>
-<body style="background: url('W.jpg') center/cover no-repeat fixed; font-family: sans-serif; margin: 0; padding: 20px;">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Environmental Advisory</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 10px 0;
+            font-family: Arial, sans-serif;
+            background-color: #2e5a1c;
+            background-image: linear-gradient(to bottom, #72ab5b, #2d5a1b);
+            background-attachment: fixed;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-sizing: border-box;
+        }
 
-    <div style="display: flex; justify-content: flex-end; background: rgba(220,235,220,0.9); padding: 15px; border-radius: 20px; margin-bottom: 20px;">
-        <a href="index.html" style="margin: 0 15px; text-decoration: none; color: #333;">Home</a>
-        <a href="TheTrees.html" style="margin: 0 15px; text-decoration: none; color: #333;">The Trees</a>
-        <a href="#" style="margin: 0 15px; text-decoration: none; color: #333;">Seas</a>
-    </div>
+        nav {
+            width: 98%;
+            max-width: 1450px;
+            display: flex;
+            justify-content: flex-end;
+            background-color: rgba(220, 235, 220, 0.65);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 15px;
+            margin-top: 5px;
+            margin-bottom: 12px;
+            padding: 12px 35px;
+            box-sizing: border-box;
+        }
 
-    <div style="display: flex; justify-content: space-between; align-items: flex-start; background: rgba(240, 240, 240, 0.95); padding: 50px; border-radius: 60px; gap: 30px;">
+        nav a {
+            text-decoration: none;
+            color: #1b3310;
+            font-size: 13px;
+            margin-left: 24px;
+        }
 
-        <div style="flex: 1; border-radius: 40px; overflow: hidden; background: rgba(144, 238, 144, 1.0);">
-            <img src="hp.jpg" alt="Phang Nga Bay" style="width: 100%; height: auto; display: block; border-radius: 40px;">
+        .main-container {
+            width: 98%;
+            max-width: 1450px;
+            background-color: rgba(240, 243, 240, 0.85);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border-radius: 45px;
+            padding: 50px 35px 35px 35px;
+            box-sizing: border-box;
+            display: grid;
+            grid-template-columns: 240px 1fr 245px;
+            gap: 30px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .left-column {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .image-placeholder-left {
+            width: 100%;
+            height: 350px;
+            background: linear-gradient(135deg, #1b3d11 0%, #466e38 50%, #90a986 100%);
+            border-radius: 35px;
+        }
+
+        .center-column {
+            display: flex;
+            flex-direction: column;
+            padding-right: 5px;
+        }
+
+        .section {
+            margin-bottom: 35px;
+        }
+
+        .section h2 {
+            font-size: 26px;
+            color: #000;
+            margin: 0 0 16px 0;
+            font-weight: bold;
+            letter-spacing: -0.5px;
+        }
+
+        .section p {
+            font-size: 13.5px;
+            color: #222;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .right-column {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .sidebar-text {
+            font-size: 11px;
+            color: #444;
+            line-height: 1.4;
+            padding-left: 5px;
+        }
+
+        .image-placeholder-right {
+            width: 100%;
+            height: 285px;
+            background: linear-gradient(210deg, #1b6880 0%, #388a53 60%, #769e35 100%);
+            border-radius: 40px;
+            border: 5px solid #89e676;
+            box-sizing: border-box;
+        }
+
+        @media (max-width: 1024px) {
+            .main-container {
+                grid-template-columns: 1fr;
+            }
+            nav {
+                justify-content: center;
+                padding: 12px 20px;
+            }
+            nav a {
+                margin: 0 15px;
+            }
+            .image-placeholder-left, .image-placeholder-right {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="TheTrees.html">The Trees</a>
+        <a href="seas.html">Seas</a>
+    </nav>
+
+    <div class="main-container">
+        <div class="left-column">
+            <div class="image-placeholder-left"></div>
         </div>
 
-        <div style="flex: 2; padding: 0 20px;">
-            <h1 style="font-size: 36px; margin-bottom: 20px;">1. Reduce, Reuse, & Recycle</h1>
-            <p style="font-size: 20px; line-height: 1.6;">This is one of the best ways to take care of the planet. Before you throw something away, try to reuse it or find a new way to use it.
-                Always recycle paper, glass, and plastic when you can.The three Rs stand for Reduce, Reuse, and Recycle, which is a simple guide to protecting our planet.
-                Reducing is the most important step because it means buying less and creating less waste in the first place. Reusing means finding new ways to use old items instead of throwing them away.
-                Recycling is the final step, where materials like paper, glass, and plastic are collected and turned into completely new products.</p>
-
-            <h1 style="font-size: 36px; margin-top: 40px; margin-bottom: 20px;">2. Save Clean Water</h1>
-            <p style="font-size: 20px; line-height: 1.6;">Water is very important for all living things. We must not waste it. You can help by turning off the water tap while you brush your teeth and by taking shorter showers every day.</p>
-
-            <h1 style="font-size: 36px; margin-top: 40px; margin-bottom: 20px;">3. Protect Plants and Trees</h1>
-            <p style="font-size: 20px; line-height: 1.6;">Trees give us clean air to breathe and homes for animals. We can protect our land by planting new flowers and trees. It also helps to pick up trash so our parks stay clean.</p>
-        </div>
-
-        <div style="flex: 1; display: flex; flex-direction: column; gap: 30px;">
-            <div>
-                <p style="font-size: 14px; line-height: 1.5; color: #555;">
-                There are over 165,000 Earth clean up groups (governmental and non governmental)</p>
+        <div class="center-column">
+            <div class="section">
+                <h2>1. Reduce, Reuse, & Recycle</h2>
+                <p>This is one of the best ways to take care of the planet. Before you throw something away, try to reuse it or find a new way to use it. Always recycle paper, glass, and plastic when you can. The three Rs stand for Reduce, Reuse, and Recycle, which is a simple guide to protecting our planet. Reducing is the most important step because it means buying less and creating less waste in the first place. Reusing means finding new ways to use old items instead of throwing them away. Recycling is the final step, where materials like paper, glass, and plastic are collected and turned into completely new products.</p>
             </div>
 
-            <div style="min-height: 250px; border-radius: 40px; background: rgba(144, 238, 144, 1.0); display: flex; align-items: center; justify-content: center;">
-            <img src="E.jpg" alt="bay" style="width: 100%; height: auto; display: block; border-radius: 40px;">
+            <div class="section">
+                <h2>2. Save Clean Water</h2>
+                <p>Water is very important for all living things. We must not waste it. You can help by turning off the water tap while you brush your teeth and by taking shorter showers every day.</p>
+            </div>
+
+            <div class="section">
+                <h2>3. Protect Plants and Trees</h2>
+                <p>Trees give us clean air to breathe and homes for animals. We can protect our land by planting new flowers and trees. It also helps to pick up trash so our parks stay clean.</p>
+            </div>
         </div>
 
+        <div class="right-column">
+            <div class="sidebar-text">
+                There are over 155,000 Earth clean up groups (governmental and non governmental)
+            </div>
+            <div class="image-placeholder-right"></div>
+        </div>
     </div>
+
 </body>
 </html>
